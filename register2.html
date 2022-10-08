@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+        font-weight: 50;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 1000px;
+        height: 250px;
+        border: 1px rgb(185, 185, 185) solid;
+    }
+
+    th,
+    td {
+        border: 1px rgb(185, 185, 185) solid;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(235, 231, 231);
+    }
+</style>
+
+<body>
+    <form action="" http://demo.codegym.vn/6/registration_form/register.php"">
+        <h1>Market Research Survey</h1>
+        <h2>Please take a few moments to complete this satisfaction survey.</h2>
+        <hr>
+
+        <h3>What is your age range?</h3>
+        <select name="age" id="age" style="width:200px">
+            <option value="range1">18-24</option>
+            <option value="range2">25-34</option>
+            <option value="range3">35-50</option>
+            <option value="range4">50+</option>
+        </select>
+
+        <h3>What is your yearly income range?</h3>
+        <select name="income" id="inc" style="width: 200px;">
+            <option value="range1">$0 - $25,000</option>
+            <option value="range2">$25,001 - $50,000</option>
+            <option value="range3">$50,001 - $100,000</option>
+            <option value="range4">$100,000+</option>
+        </select>
+
+        <h3>Gender Identity</h3>
+        <input type="radio" name="sex" value="male"> Male <br>
+        <input type="radio" name="sex" value="female"> Female <br>
+        <input type="radio" name="sex" value="Nonbinary"> Nonbinary <br>
+        <input type="radio" name="sex" value="other"> Other <br>
+        <input type="text" name="othersex" style="width:100px; margin-left:25px">
+
+        <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h3>
+        <input type="checkbox" name="products" value="product1"> Product 1 <br>
+        <input type="checkbox" name="products" value="product2"> Product 2 <br>
+        <input type="checkbox" name="products" value="product3"> Product 3 <br>
+
+        <h3>How often would you use our new product?</h3>
+        <input type="radio" name="newproduct" value="daily"> Daily <br>
+        <input type="radio" name="newproduct" value="weekly"> Weekly <br>
+        <input type="radio" name="newproduct" value="monthly"> Monthly <br>
+
+        <h3>What would you pay for the new product?</h3>
+        <span style="margin-right: 10px;">$</span><input style="width: 80px;" type="text" name="dollars"> . <input
+            style="width:25px;" type="text" name="cents"><br>
+        <span style="margin-left: 18px;">Dollars</span><span style="padding-left: 50px;">Cents</span>
+
+        <h3>What features would you like to see in the new product.</h3>
+        <textarea name="features" id="ft" cols="110" rows="10"></textarea>
+
+        <h3>
+            Please rate your level of agreement with the following statements.</h3>
+        <table>
+            <tr style="height: 60px;">
+                <td></td>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Our products are priced fairly.</th>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="fairly" value="1"> <span style="width: 100%; padding-left: 47%">1</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="fairly" value="2"> <span style="width: 100%; padding-left: 47%">2</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="fairly" value="3"> <span style="width: 100%; padding-left: 47%">3</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="fairly" value="4"> <span style="width: 100%; padding-left: 47%">4</span>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Our products are high quality.</th>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="quality" value="1"> <span style="width: 100%; padding-left: 47%">1</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="quality" value="2"> <span style="width: 100%; padding-left: 47%">2</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="quality" value="3"> <span style="width: 100%; padding-left: 47%">3</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="quality" value="4"> <span style="width: 100%; padding-left: 47%">4</span>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">You would recommend our product to a friend or coworker.</th>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="recommend" value="1"> <span style="width: 100%; padding-left: 47%">1</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="recommend" value="2"> <span style="width: 100%; padding-left: 47%">2</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="recommend" value="3"> <span style="width: 100%; padding-left: 47%">3</span>
+                </td>
+                <td style="width: 150px;"> <input style="margin-right: auto; margin-left: auto;width: 100%;"
+                        type="radio" name="recommend" value="4"> <span style="width: 100%; padding-left: 47%">4</span>
+                </td>
+            </tr>
+        </table> <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
